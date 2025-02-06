@@ -14,7 +14,9 @@
           src="./assets/gul.jpg"
       />
       <div className="bg-blue-600 absolute top-[7vh] right-[3vw] h-[14.5%] w-[50%]">
-
+        <form className="bg-blue-700 flex w-full h-[70%]">
+          <input type="search" className="bg-blue-800 w-full h-full flex-1"/>
+        </form>
       </div>
     </header>
   </div>
