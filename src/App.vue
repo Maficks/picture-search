@@ -13,15 +13,18 @@
           alt="logo"
           src="./assets/gul.jpg"
       />
-      <div className="bg-blue-600 absolute top-[7vh] right-[3vw] h-[14.5%] w-[50%]">
+      <div className="bg-blue-600 absolute top-[7vh] right-[3vw] h-[14.5%] w-[50%] flex items-center">
         <form className="bg-blue-700 flex w-full h-[70%]">
-          <input type="search" className="bg-blue-800 w-full h-full flex-1"/>
+          <input type="search" className="bg-blue-800 w-full h-full flex-1 text-white"/>
           <button className="h-full w-[19%] flex items-center justify-center text-white bg-blue-800">
             FIND
           </button>
         </form>
       </div>
     </header>
+    <main className="relative w-full h-[calc(100vh-17.5vh)]">
+      <img alt="logo" src="./assets/ptica.jpg" className="relative w-[10%] h-[30%] left-[1%] top-[8%]">
+    </main>
   </div>
 </template>
 
