@@ -25,7 +25,13 @@
     <main className="relative w-full h-[calc(100vh-17.5vh)]">
       <img alt="logo" src="./assets/ptica.jpg" className="relative w-[35%] h-[62%] left-[1%] top-[8%]">
       <div className="absolute bottom-[3%] left-[1.5%] w-[36%] h-[24%] bg-purple-300 flex items-center justify-evenly">
-
+        <button className="bg-purple-400 text-white text-[200%]"
+                @click="changePage"
+                v-for="page of pages"
+                type="button"
+        >
+          {{ page.id }}
+        </button>
       </div>
     </main>
   </div>
