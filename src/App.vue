@@ -1,11 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const screenWidth = ref(window.innerWidth);
 const screenHeight = ref(window.innerHeight)
 
 console.log(screenHeight.value)
 console.log(screenWidth.value)
+
+const updateScreenResolution = () => {
+  screenWidth.value = window.innerWidth;
+  screenHeight.value = window.innerHeight
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateScreenResolution);
+});
 </script>
 
 <template>
